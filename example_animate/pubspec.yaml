@@ -15,9 +15,9 @@ dependencies:
   animated_toggle_switch:
     path: ../
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
 
 flutter:
   uses-material-design: true
