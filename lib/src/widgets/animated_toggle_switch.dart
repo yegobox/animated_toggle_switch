@@ -520,7 +520,7 @@ class _AnimatedToggleSwitchState<T> extends State<AnimatedToggleSwitch<T>>
     _controller =
         AnimationController(vsync: this, duration: widget.animationDuration)
           ..addListener(() {
-            SchedulerBinding.instance?.addPostFrameCallback((timeStamp) {
+            SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
               setState(() {});
             });
           })
@@ -600,7 +600,8 @@ class _AnimatedToggleSwitchState<T> extends State<AnimatedToggleSwitch<T>>
               Radius.circular(widget.height / 2),
             );
 
-        Color indicatorColor = widget.indicatorColor ?? theme.accentColor;
+        Color indicatorColor =
+            widget.indicatorColor ?? theme.colorScheme.secondary;
 
         List<Widget> foregroundStack = <Widget>[
               Positioned(
@@ -682,10 +683,10 @@ class _AnimatedToggleSwitchState<T> extends State<AnimatedToggleSwitch<T>>
               tween: ColorTween(
                   begin: widget.borderColorBuilder?.call(widget.current) ??
                       widget.borderColor ??
-                      theme.accentColor,
+                      theme.colorScheme.secondary,
                   end: widget.borderColorBuilder?.call(widget.current) ??
                       widget.borderColor ??
-                      theme.accentColor),
+                      theme.colorScheme.secondary),
               builder: (c, color, child) => Container(
                 width: width,
                 height: widget.height,

@@ -1,17 +1,18 @@
 name: animated_toggle_switch
 description: Simple and animated switch for multiple choices. It's a good alternative if you don't want to use something like a dropdown menu.
-version: 0.2.0
+version: 0.2.1
 repository: https://github.com/SplashByte/animated_toggle_switch
 publish_to: "none"
 environment:
-  sdk: ">=2.16.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 # dev_dependencies:
-#   flutter_test:
-#     sdk: flutter
-
-# flutter:
+#   # The "flutter_lints" package below contains a set of recommended lints to
+#   # encourage good coding practices. The lint set provided by the package is
+#   # activated in the `analysis_options.yaml` file located at the root of your
+#   # package. See that file for information about deactivating specific lint
+#   # rules and activating additional ones.
+#   flutter_lints: ^2.0.0
